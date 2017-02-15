@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Tag People",
+  "version": "0.0.3",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "48": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.facebook.com/*", "http://www.facebook.com/*", "*://*.facebook.com/*", "*://facebook.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
